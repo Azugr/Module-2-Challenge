@@ -63,4 +63,4 @@ Contact
 
 For more information, feel free to contact me:
 
-    Email: draazucenagarcia    LinkedIn: LinkedIn Profile
+    Email: draazucenagarcia@ayudarenal.com    LinkedIn: linkedin.com/in/draazucenagarcia
