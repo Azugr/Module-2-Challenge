@@ -1,0 +1,6 @@
+# Ignore any temporary or backup files
+*.bak
+*.tmp
+
+# Ignore VSCode settings (if you use VSCode)
+.vscode/
