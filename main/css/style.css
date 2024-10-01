@@ -273,24 +273,21 @@ footer {
 
   .main-content {
     grid-template-columns: 1fr;
+    min-height: 100vh; /* Adjust the height on smaller screens */
   }
 
   .project-grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 
   .project-item {
     height: auto;
+    min-height: 150px; /* Ensures minimum height for project items */
   }
 
   .project-item h3 {
     font-size: 1.2rem;
     bottom: 10px;
     left: 10px;
-  }
-}
-@media (max-width: 768px) {
-  .project-item {
-      min-height: 150px; /* Adjust this as per requirement */
   }
 }
