@@ -1,84 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azu Garcia - Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
-    <header class="main-header">
-        <h1>Azu Garcia - Aspiring Web Developer</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+import React from 'react';
+import profileImage from './assets/images/Profile.jpg';
+import project1Image from './assets/images/project1.jpg';
+import project2Image from './assets/images/project2.jpg';
+import project3Image from './assets/images/project3.jpg';
+import project4Image from './assets/images/project4.jpg';
+import project5Image from './assets/images/project5.jpg';
 
-    <!-- Main content inside a <main> element -->
-    <main class="main-content">
-        <!-- About Me Section -->
-        <section id="about" class="about-section">
-            <div class="about-container">
-                <img src="assets/images/profile.jpg" alt="Azu Garcia Profile" class="about-image">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>
-                        Hi! I'm Azu Garcia, an aspiring web developer passionate about coding and creating digital solutions. My goal is to transition from my current profession and fully embrace the world of web development, focusing on front-end and full-stack projects.
-                    </p>
-                </div>
-            </div>
-        </section>
+function Portfolio() {
+    return (
+        <div>
+            {/* Header Section */}
+            <header className="main-header">
+                <h1>Azu Garcia - Aspiring Web Developer</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section section">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-item run-buddy" style="background-image: url('assets/images/project1.jpg');">
-                    <h3>GitHub: CSS Snippet Sheet Cheat</h3>
-                </div>
-                <div class="project-item led-wall" style="background-image: url('assets/images/project2.jpg');">
-                    <h3>Domestika: Creating Presentations with AI</h3>
-                </div>
-                <div class="project-item react-calc" style="background-image: url('assets/images/project3.jpg');">
-                    <h3>Domestika: Diseño de un Logo para Nefrología</h3>
-                </div>
-                <div class="project-item pastel-puzzles" style="background-image: url('assets/images/project4.jpg');">
-                    <h3>Domestika: Técnicas de Composición para Diseño Gráfico</h3>
-                </div>
-                <div class="project-item surf-report" style="background-image: url('assets/images/project5.jpg');">
-                    <h3>Domestika: Using ChatGPT for Work</h3>
-                </div>
-            </div>
-        </section>
+            {/* Main Content Section */}
+            <main className="main-content">
+                {/* About Me Section */}
+                <section id="about" className="about-section">
+                    <div className="about-container">
+                        <img src={profileImage} alt="Azu Garcia Profile" className="about-image" />
+                        <div className="about-text">
+                            <h2>About Me</h2>
+                            <p>
+                                Hi! I'm Azu Garcia, an aspiring web developer passionate about coding and creating digital solutions. My goal is to transition from my current profession and fully embrace the world of web development, focusing on front-end and full-stack projects.
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <div class="contact-container">
-                <h2>Contact Me</h2>
-                <div class="contact-details">
-                    <a id="email-link" href="mailto:draazucenagarcia@ayudarenal.com" target="_blank" aria-label="Email Azu Garcia">
-                        <i class="fas fa-at"></i>
-                    </a>
-                    <a id="github-link" href="https://github.com/Azugr" target="_blank" aria-label="GitHub Profile">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a id="linkedin-link" href="https://www.linkedin.com/in/draazucenagarcia/" target="_blank" aria-label="LinkedIn Profile">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
+                {/* Projects Section */}
+                <section id="projects" className="projects-section">
+                    <h2>My Projects</h2>
+                    <div className="project-grid">
+                        <article className="project-item" style={{ backgroundImage: `url(${project1Image})` }}>
+                            <h3>GitHub: CSS Snippet Sheet Cheat</h3>
+                        </article>
+                        <article className="project-item" style={{ backgroundImage: `url(${project2Image})` }}>
+                            <h3>Domestika: Creating Presentations with AI</h3>
+                        </article>
+                        <article className="project-item" style={{ backgroundImage: `url(${project3Image})` }}>
+                            <h3>Domestika: Diseño de un Logo para Nefrología</h3>
+                        </article>
+                        <article className="project-item" style={{ backgroundImage: `url(${project4Image})` }}>
+                            <h3>Domestika: Técnicas de Composición para Diseño Gráfico</h3>
+                        </article>
+                        <article className="project-item" style={{ backgroundImage: `url(${project5Image})` }}>
+                            <h3>Domestika: Using ChatGPT for Work</h3>
+                        </article>
+                    </div>
+                </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 Azu Garcia. All Rights Reserved.</p>
-    </footer>
+                {/* Contact Section */}
+                <section id="contact" className="contact-section">
+                    <div className="contact-container">
+                        <h2>Contact Me</h2>
+                        <div className="contact-details">
+                            <a id="email-link" href="mailto:draazucenagarcia@ayudarenal.com" target="_blank" aria-label="Email Azu Garcia">
+                                <i className="fas fa-at"></i>
+                            </a>
+                            <a id="github-link" href="https://github.com/Azugr" target="_blank" aria-label="GitHub Profile">
+                                <i className="fab fa-github"></i>
+                            </a>
+                            <a id="linkedin-link" href="https://www.linkedin.com/in/draazucenagarcia/" target="_blank" aria-label="LinkedIn Profile">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
 
-</body>
-</html>
+            {/* Footer Section */}
+            <footer>
+                <p>© 2024 Azu Garcia. All Rights Reserved.</p>
+            </footer>
+        </div>
+    );
+}
+
+export default Portfolio;
+
