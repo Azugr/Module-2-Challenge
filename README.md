@@ -1,9 +1,7 @@
-
-<<<<<<< HEAD
 # Module-2-Challenge
 # Portfolio
 
-A portfolio of work can showcase your skills and talents to employers looking to fill part-time or full-time positions. This portfolio is designed to highlight your strongest work as well as the thought processes behind it. 
+A portfolio of work can showcase your skills and talents to employers looking to fill part-time or full-time positions. This portfolio is designed to highlight your strongest work as well as the thought processes behind it.
 
 ## Project Overview
 This challenge focuses on building a responsive portfolio webpage using **flexbox**, **media queries**, and **CSS variables**. It includes placeholder applications and images, which can be updated with real projects later in the course.
@@ -11,7 +9,7 @@ This challenge focuses on building a responsive portfolio webpage using **flexbo
 ## User Story
 AS AN employer  
 I WANT to view a potential employee's deployed portfolio of work samples  
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position  
+SO THAT I can review samples of their work and assess whether they're a good candidate for an open position.
 
 ## Acceptance Criteria
 - GIVEN I need to sample a potential employee's previous work
@@ -39,5 +37,3 @@ SO THAT I can review samples of their work and assess whether they're a good can
 
 ## How to Submit the Challenge
 Once completed, the project can be submitted for grading on the Ed platform. After achieving the desired score, close the Ed tab in your browser.
-=======
-
